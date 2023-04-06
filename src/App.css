@@ -1,38 +1,74 @@
-.App {
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(http://fonts.googleapis.com/css?family=Ruluko);
+
+body {
+  font-family: "Ruluko", sans-serif;
+  margin: 0px auto;
   text-align: center;
+  width: 600px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  margin: 50px 0px;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  padding: 10px;
+}
+
+#title {
+  color: #fbec5d;
+  background-color: #fffbc9;
+  border-radius: 5px;
+  font-family: "Oleo Script", cursive;
+  font-size: 50px;
+  margin: 0;
+}
+
+.konto {
+  color: #6b3e26;
+  background-color: #fffbc9;
+  border: 1px solid #fbec5d;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.saldo {
+  background-color: #fbec5d;
+  color: #ffffff;
+  border: 1px solid #fbec5d;
+  border-radius: 15px;
+  font-family: "Ruluko", sans-serif;
+  font-size: 50px;
+  margin: 5px;
+  padding: 25px 0px;
+}
+.geldbetrag {
+  margin: 0 0.25rem;
+  min-width: 125px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  transition: border-color 0.5s ease-out;
+}
+.button-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.auszahlen,
+.einzahlen {
+  margin: 5px;
+  background-color: #fbec5d;
+  color: #6b3e26;
+  border-radius: 5px;
 }
